@@ -5,7 +5,7 @@ def get_long_description() -> str:
         return fh.read()
 
 setup(
-    name="metaflow-card-hfdataset", 
+    name="metaflow-card-hf-dataset", 
     version="0.0.1",
     description="A metaflow card that renders HTML inputs.",
     long_description=get_long_description(),
