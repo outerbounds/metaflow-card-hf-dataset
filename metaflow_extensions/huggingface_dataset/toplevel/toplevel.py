@@ -4,7 +4,7 @@ from ..plugins.huggingface_dataset.deco import huggingface_dataset_deco as huggi
 import pkg_resources
 
 try:
-    __version__ = pkg_resources.get_distribution("metaflow-card-hfdataset").version
+    __version__ = pkg_resources.get_distribution("metaflow-card-hf-dataset").version
 except:
     # this happens on remote environments since the job package
     # does not have a version
