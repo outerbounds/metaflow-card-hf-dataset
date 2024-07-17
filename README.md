@@ -7,8 +7,8 @@ pip install metaflow-card-hf-dataset
 ## Usage
 
 After installing the module, you can add any HuggingFace dataset to your Metaflow tasks by using the `@huggingface_dataset` decorator. There are two ways to use the decorator:
-    - Via the `id` argument, which is the dataset ID from HuggingFace.
-    - Via the `artifact_id` argument, which is the name of a FlowSpec artifact that contains the dataset ID.
+- Via the `id` argument, which is the dataset ID from HuggingFace.
+- Via the `artifact_id` argument, which is the name of a FlowSpec artifact that contains the dataset ID.
 
 Use the first if your workflow always reads from the same HuggingFace dataset ID. 
 Use the second if your workflow pass in dataset IDs as parameters or changes them dynamically.
