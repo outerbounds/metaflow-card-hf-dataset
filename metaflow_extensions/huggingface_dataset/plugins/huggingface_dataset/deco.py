@@ -73,6 +73,7 @@ class HuggingfaceDatasetDecorator(StepDecorator, CardDecoratorInjector):
 
     name = CARD_TYPE
     defaults = {"id": None, "artifact_id": None, "vh": 550}
+    allow_multiple = True
 
     def step_init(
         self, flow, graph, step_name, decorators, environment, flow_datastore, logger

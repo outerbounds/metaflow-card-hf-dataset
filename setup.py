@@ -8,7 +8,7 @@ def get_long_description() -> str:
 
 setup(
     name="metaflow-card-hf-dataset",
-    version="0.0.4",
+    version="0.0.5",
     description="A metaflow card that renders HTML inputs.",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
