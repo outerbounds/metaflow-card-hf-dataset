@@ -95,7 +95,7 @@ class HuggingfaceDatasetDecorator(StepDecorator, CardDecoratorInjector):
         if self.attributes.get("id"):
             _id = self.attributes.get("id").replace("/", "_").replace("-", "_")
         else:
-            _id = self.attributes.get("artifact_id")
+            _id = self.attributes.get("artifact_id").replace("/", "_").replace("-", "_")
 
         self.attach_card_decorator(
             flow,
